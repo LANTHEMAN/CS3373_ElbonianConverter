@@ -68,8 +68,12 @@ public class ElbonianArabicConverter {
      *
      * @return An Elbonian value
      */
-    public String toElbonian(int n) {
+    public String toElbonian() {
         // TODO Fill in the method's body
+        if (isElbonian()) {
+
+        }
+        int n = Integer.parseInt(number);
         String Elbonian = "";
         int single = n % 10;
         n -= single;
@@ -138,4 +142,21 @@ public class ElbonianArabicConverter {
         return Elbonian;
     }
 
+    /**
+     * Will return true if the number of this object is Elbonian, and false if it is not
+     *
+     * @return whether or not number is Elbonian
+     */
+    private boolean isElbonian() {
+        return true;
+    }
+
+    /**
+     * Will return true if the number of this object is Arabic, and false if it is not
+     *
+     * @return whether or not number is Arabic
+     */
+    private boolean isArabic() {
+        return true;
+    }
 }

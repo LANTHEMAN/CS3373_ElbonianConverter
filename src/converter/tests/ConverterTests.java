@@ -35,4 +35,10 @@ public class ConverterTests {
     }
 
     // TODO Add more test cases
+    @Test
+    public void toElbonian() throws MalformedNumberException, ValueOutOfBoundsException {
+        ElbonianArabicConverter converter = new ElbonianArabicConverter("1");
+        String s = converter.toElbonian();
+        System.out.println(s);
+    }
 }
